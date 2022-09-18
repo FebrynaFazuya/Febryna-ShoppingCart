@@ -1,0 +1,64 @@
+Begin
+while(repeat)
+write("Welcome to Toys Store");
+while (status = true){
+writeln("please input code product : ");
+read(code_product);
+while(status=true)
+writeln("please input amount product : ");
+read(amount_product);
+
+if (amount_product<0)
+write("Input Amount Product Error");
+write("Try Again");
+status=true; end if
+else status=false;break;
+
+if (code_product A01) then
+write("Product = Hg Gundam Barbatos");
+Price = 175.000 ;
+total_price1 =(double)(price*amount_product);
+write("Total_price : "+total_price1);
+status = true ; end if
+
+else if (code_product A02) then
+write("Product = Hg Gundam Shia Qant");
+Price = 195.000 ;
+total_price2 =(double)(price*amount_product);
+write("Total_price : "+total_price2);
+status = true ; end if
+
+else if (code_product A03) then
+write("Product = Hg Gundam Exia");
+Price = 180.000 ;
+total_price3 =(double)(price*amount_product);
+write("Total_price : "+total_price3);
+status = true ; end if
+
+else if (code_product A04) then
+write("Product = Hg Gundam Justice");
+Price = 200.000 ;
+total_price4 =(double)(price*amount_product);
+write("Total_price : "+total_price4);
+status = true ; end if
+
+else if (code_product 0) then
+Write(" Transaction Completed ");
+status = false ; break; end if
+else
+Write(" Data Input Error ");
+status = false; break; end if
+
+Amount_all_product = totalprice1 + totalprice2 + totalprice3+totalprice4;
+Write("Total Your Shopping Amount  "+Amount_all_product );
+
+if(payment<Amount_all_product)then
+write("Payment Input Error");
+write("Try again");
+status = true ;
+else
+status=false;break;
+Change = Payment - Amount_all_product;
+write("Bill = Rp "+Change+ " ");
+end if
+end
